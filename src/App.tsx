@@ -10,11 +10,13 @@ const Label = function (props: any) {
    );
 };
 
-class LabelArrow extends React.Component {
-   render() {
-      return <h2>Arrow teste {this.props.count}</h2>;
-   }
-}
+// class LabelArrow extends React.Component {
+//    render() {
+//       return <h2>Arrow teste {this.props.count}</h2>;
+//    }
+// }
+
+const LabelArrow = (props: any) => <h2>{props.count}</h2>;
 
 const App = (props: any) => {
    const [count, setCount] = useState(0);
